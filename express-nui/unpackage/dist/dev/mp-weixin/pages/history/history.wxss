@@ -1,0 +1,270 @@
+/* 水平间距 */
+/* 水平间距 */
+.container {
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+.search-box {
+  display: flex;
+  margin-bottom: 20px;
+}
+.search-input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.search-btn {
+  margin-left: 10px;
+  padding: 5px 20px;
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+.toggle-btn {
+  margin: 0 15px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.toggle-btn.active {
+  background-color: #4cd964;
+  color: white;
+}
+.toggle-btn:active {
+  transform: scale(0.98);
+}
+.express-item-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.express-item {
+  display: flex;
+  position: relative;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.express-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.express-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.express-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.express-status {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+.express-label-code {
+  font-size: 14px;
+  color: #666;
+  margin-left: 10px;
+}
+.express-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+.express-update-time {
+  font-size: 12px;
+  color: #999;
+}
+.actions {
+  position: absolute;
+  right: -160px;
+  top: 0;
+  bottom: 0;
+  width: 160px;
+  display: flex;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+}
+.btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+  padding: 0 15px;
+}
+.btn.delete {
+  background-color: #ff3157;
+}
+.btn.details {
+  background-color: #007aff;
+}
+.empty-tips {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+}
+.express-list {
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+/* 模态框背景样式，设置为固定定位，覆盖整个屏幕，半透明黑色背景实现遮罩效果 */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  /* 确保模态框在页面其他内容之上显示 */
+}
+
+/* 模态框内容区域样式，设置白色背景，圆角边框，控制宽度自适应且不超过最大宽度 */
+.modal-content {
+  background-color: white;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  /* 添加阴影效果，增强立体感 */
+}
+
+/* 模态框标题栏样式，设置内边距，底部边框分隔，灵活布局 */
+.modal-header {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* 模态框标题文字样式，设置字体大小和粗细，增强可读性 */
+.modal-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* 模态框正文内容区域样式，设置内边距 */
+.modal-body {
+  padding: 15px;
+  max-height: 70vh;
+  /* 设置最大高度，避免内容过多时超出屏幕 */
+  overflow-y: auto;
+  /* 内容超出时显示滚动条 */
+}
+
+/* 模态框中详情项样式，设置下边距，形成间隔效果 */
+.detail-item {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* 模态框中详情项值样式，设置自动换行和对齐 */
+.detail-value {
+  flex: 1;
+  /* 自适应剩余宽度 */
+  word-wrap: break-word;
+  /* 长单词或 URL 断行 */
+  white-space: normal;
+  /* 允许自动换行 */
+  box-sizing: border-box;
+  /* 包含内边距和边框在内计算宽度和高度 */
+  line-height: 1.5;
+  /* 设置行高，使文本更易读 */
+  text-align: left;
+  /* 左对齐 */
+  text-align-last: auto;
+  /* 最后一行文本自动对齐 */
+  word-break: break-all;
+  /* 强制文本在边界内换行 */
+}
+
+/* 模态框中详情项标签样式，设置字体粗细和间距，突出显示 */
+.detail-label {
+  margin-right: 10px;
+  width: 80px;
+  /* 设置固定宽度，使标签对齐 */
+  color: #555;
+}
+
+/* 模态框底部操作区域样式，设置内边距，上边框分隔，右对齐布局 */
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+  border-top: 1px solid #eee;
+}
+.toggle-text {
+  padding: 8px 0;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* 模态框操作按钮样式，设置内边距、背景颜色、圆角等，优化视觉效果 */
+.modal-btn {
+  padding: 6px 16px;
+  margin-left: 10px;
+  /* 按钮之间添加间距，避免拥挤 */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  /* 添加过渡效果，提升交互体验 */
+}
+
+/* 确认按钮样式，使用绿色标识，传达积极含义 */
+.confirm-btn {
+  background-color: #07c160;
+  /* 使用更具辨识度的绿色 */
+  color: white;
+}
+.confirm-btn:hover {
+  background-color: #06ad56;
+  /* 鼠标悬停时颜色加深，提供视觉反馈 */
+}
+
+/* 取消按钮样式，使用灰色标识，传达中性或取消含义 */
+.cancel-btn {
+  background-color: #f5f5f5;
+  /* 使用浅灰色背景 */
+  color: #666;
+}
+.cancel-btn:hover {
+  background-color: #e8e8e8;
+  /* 鼠标悬停时颜色稍深，提供视觉反馈 */
+}

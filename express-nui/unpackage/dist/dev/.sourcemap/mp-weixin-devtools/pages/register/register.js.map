@@ -1,0 +1,1 @@
+{"version":3,"names":["wx","createPage","MiniProgramPage"],"sources":["cGFnZXMvcmVnaXN0ZXIvcmVnaXN0ZXIudnVl"],"sourcesContent":["import MiniProgramPage from 'D:/program/java/project/spring-vue-Express/express-nui/pages/register/register.vue'\nwx.createPage(MiniProgramPage)"],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AACAA,EAAA,CAAGC,UAAA,CAAWC,eAAe","ignoreList":[]}

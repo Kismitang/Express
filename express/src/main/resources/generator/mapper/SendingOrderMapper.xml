@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.generator.mapper.SendingOrderMapper">
+
+    <resultMap id="BaseResultMap" type="org.example.generator.entity.SendingOrder">
+            <id property="orderId" column="order_id" />
+            <result property="senderName" column="sender_name" />
+            <result property="senderPhone" column="sender_phone" />
+            <result property="receiveName" column="receive_name" />
+            <result property="receivePhone" column="receive_phone" />
+            <result property="receiveAddress" column="receive_address" />
+            <result property="orderDescription" column="order_description" />
+            <result property="cost" column="cost" />
+            <result property="paymentStatus" column="payment_status" />
+            <result property="createdAt" column="created_at" />
+            <result property="senderAddress" column="sender_address" />
+            <result property="updateAt" column="update_at" />
+            <result property="orderNumber" column="order_number" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        order_id,sender_name,sender_phone,receive_name,receive_phone,receive_address,
+        order_description,cost,payment_status,created_at,sender_address,
+        update_at,order_number
+    </sql>
+</mapper>

@@ -1,0 +1,51 @@
+
+.container.data-v-1353b6cf {
+  padding: 20px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+.header.data-v-1353b6cf {
+  background-color: #fff;
+  padding: 15px 20px;
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.header-title.data-v-1353b6cf {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+.order-detail.data-v-1353b6cf {
+  background-color: #fff;
+  border-radius: 0 0 12px 12px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.detail-item.data-v-1353b6cf {
+  display: flex;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+.detail-item.data-v-1353b6cf:last-child {
+  border-bottom: none;
+}
+.label.data-v-1353b6cf {
+  width: 100px;
+  color: #666;
+  font-weight: bold;
+}
+.value.data-v-1353b6cf {
+  flex: 1;
+  color: #333;
+}
+
+/* 特殊样式 */
+.status-value.data-v-1353b6cf {
+  font-weight: bold;
+}
+.amount-value.data-v-1353b6cf {
+  color: #ff4d4f;
+  font-weight: bold;
+}

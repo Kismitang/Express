@@ -1,0 +1,67 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/home/home",
+    "pages/noticeAndhelp/noticeAndhelp",
+    "pages/message/message",
+    "pages/my/my",
+    "pages/register/register",
+    "pages/noticeDetail/noticeDetail",
+    "pages/editMy/editMy",
+    "pages/history/history",
+    "pages/sendCourier/sendCourier",
+    "pages/senderOrder/senderOrder",
+    "pages/feeRule/feeRule",
+    "pages/orderDetail/orderDetail",
+    "pages/MHP/MHP",
+    "pages/addHzTask/addHzTask",
+    "pages/hzTaskDetail/hzTaskDetail",
+    "pages/allHzTask/allHzTask",
+    "pages/messageDetail/messageDetail",
+    "pages/wallet/wallet",
+    "pages/recharge/recharge",
+    "pages/pickupCode/pickupCode"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "苍霞驿站服务",
+    "navigationBarBackgroundColor": "#55aaff"
+  },
+  "tabBar": {
+    "selectedColor": "#000",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/static/快递包裹,箱子.png",
+        "selectedIconPath": "/static/快递包裹,箱子 (1).png"
+      },
+      {
+        "pagePath": "pages/noticeAndhelp/noticeAndhelp",
+        "text": "公告",
+        "iconPath": "/static/公告.png",
+        "selectedIconPath": "/static/公告(1).png"
+      },
+      {
+        "pagePath": "pages/allHzTask/allHzTask",
+        "text": "任务",
+        "iconPath": "/static/任务.png",
+        "selectedIconPath": "/static/任务-05.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "/static/消息.png",
+        "selectedIconPath": "/static/消息(1).png",
+        "badge": 0
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/static/我的.png",
+        "selectedIconPath": "/static/我的 (1).png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.generator.mapper.FinancialRecordsMapper">
+
+    <resultMap id="BaseResultMap" type="org.example.generator.entity.FinancialRecords">
+            <id property="financialId" column="financial_id" />
+            <result property="incomeType" column="income_type" />
+            <result property="amount" column="amount" />
+            <result property="totalIncome" column="total_income" />
+            <result property="createTime" column="create_time" />
+            <result property="relatedOrderId" column="related_order_id" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        financial_id,income_type,amount,total_income,create_time,related_order_id
+    </sql>
+</mapper>

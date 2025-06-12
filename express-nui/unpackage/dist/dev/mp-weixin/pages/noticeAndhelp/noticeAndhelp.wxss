@@ -1,0 +1,121 @@
+/* 水平间距 */
+/* 水平间距 */
+.container {
+  padding: 0px;
+  background-color: #f5f5f5;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 60px;
+  /* 为底部按钮留出空间 */
+}
+
+/* 顶部标签栏 */
+.tabs {
+  display: flex;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.tab-item {
+  flex: 1;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 14px;
+  color: #999;
+  position: relative;
+}
+.tab-item.active {
+  color: #007aff;
+}
+.tab-item.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  width: 50%;
+  height: 2px;
+  background-color: #007aff;
+}
+.notice-list {
+  padding: 10px;
+  background-color: #f5f5f5;
+  margin-top: 40px;
+}
+.notice-item-wrapper {
+  transition: all 0.2s;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+.notice-item-wrapper:active {
+  background-color: #f0f0f0;
+  transform: scale(0.98);
+}
+
+/* 标题和类型在同一行 */
+.notice-header {
+  margin-bottom: 10px;
+}
+.notice-title-container {
+  display: flex;
+  align-items: center;
+}
+.notice-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-right: 10px;
+  flex: 1;
+}
+.notice-type {
+  font-size: 12px;
+  color: #666;
+  background-color: #f0f0f0;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+.type-normal {
+  background-color: #e9f9ef;
+  /* 浅绿色背景 */
+  color: #20c997;
+  /* 浅绿色文字 */
+}
+.type-expiry {
+  background-color: #fff3bf;
+  /* 浅黄色背景 */
+  color: #e67700;
+  /* 橙色文字 */
+}
+
+/* 公告内容预览区域 */
+.notice-content-wrapper {
+  margin: 10px 0;
+}
+.notice-content {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* 其他信息区域 */
+.notice-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #999;
+}
+.empty-tips {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+  margin-top: 50px;
+}

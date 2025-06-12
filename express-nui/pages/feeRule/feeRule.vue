@@ -1,0 +1,85 @@
+<template>
+	<view class="fee-rule-page">
+		<view class="fee-rule-title">寄件收费规则</view>
+		<view class="fee-rule-content">
+			<view class="rule-section">
+				<view class="rule-title">一、计费重量</view>
+				<view class="rule-text">快件计费重量取实际重量和体积重量中的较大值，以此分为按体积计费或按重量计费。若为子母件，则将每件的计费重量进行汇总后计算总运费。</view>
+				<view class="rule-subtitle">1、按重量计费</view>
+				<view class="rule-text">当实际重量大于体积重量时，计费重量为实际重量。</view>
+				<view class="rule-subtitle">2、按体积计费</view>
+				<view class="rule-text">当体积重量大于实际重量时，计费重量为体积重量。</view>
+				<view class="rule-text">体积重量的计算方式为：</view>
+				<view class="rule-text">体积重量 = 长 (cm)× 宽 (cm)× 高 (cm)÷6000 。</view>
+			</view>
+			<view class="rule-section">
+				<view class="rule-title">二、计费方式</view>
+				<view class="rule-text">基础运费13元(1kg内)，超出部分每0.5kg加收1元</view>
+			</view>
+			<view class="rule-section">
+				<view class="rule-title">二、托寄物收寄尺寸标准</view>
+				<view class="rule-subtitle">1、陆路运输</view>
+				<view class="rule-text">单件重量≤500kg，长宽高≤4m*1.8m*1.5m（部分线路单件重量≤130kg，长宽高≤3m*1.5m*1.5m）。</view>
+			</view>
+		</view>
+	</view>
+</template>
+
+<script>
+	export default {
+		data() {
+			return {
+				
+			};
+		}
+	}
+</script>
+
+<style lang="scss">
+.fee-rule-page {
+	padding: 20px;
+	background-color: #f7f7f7;
+	min-height: 100vh;
+}
+
+.fee-rule-title {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: #333;
+	text-align: center;
+}
+
+.fee-rule-content {
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.rule-section {
+	margin-bottom: 20px;
+}
+
+.rule-title {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: #333;
+}
+
+.rule-subtitle {
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	color: #666;
+}
+
+.rule-text {
+	font-size: 14px;
+	color: #666;
+	line-height: 1.6;
+	margin-bottom: 5px;
+}
+
+</style>

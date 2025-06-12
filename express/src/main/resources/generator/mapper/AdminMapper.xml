@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.generator.mapper.AdminMapper">
+
+    <resultMap id="AdminResultMap" type="org.example.generator.entity.Admin">
+            <id property="adminId" column="admin_id" />
+            <result property="password" column="password" />
+            <result property="name" column="name" />
+            <result property="phone" column="phone" />
+            <result property="role" column="role" />
+            <result property="status" column="status" />
+            <result property="avatarUrl" column="avatar_url" />
+            <result property="workStatus" column="work_status" />
+    </resultMap>
+
+
+<!--    &lt;!&ndash; 查询所有管理员 &ndash;&gt;-->
+    <select id="selectList" resultMap="AdminResultMap">
+        SELECT * FROM admin
+    </select>
+
+    <!-- 插入一条管理员记录 -->
+    <insert id="insert" parameterType="Shelf">
+        INSERT INTO admin (
+            ,
+            password,
+            name,
+            phone,
+            role,
+            status,
+            work_status
+        ) VALUES (
+                     #{username},
+                     #{password},
+                     #{name},
+                     #{phone},
+                     #{role},
+                     #{status},
+                     #{workStatus}
+                 )
+
+    </insert>
+    <!-- 更新管理员信息 -->
+    <update id="updateById" parameterType="org.example.generator.entity.Admin">
+        UPDATE admin
+        SET
+            password = #{password},
+            name = #{name},
+            phone = #{phone},
+            role = #{role},
+            status = #{status},
+            login_fail_count = #{loginFailCount},
+            avatar_url = #{avatarUrl},
+            work_status = #{workStatus}
+        WHERE admin_id = #{adminId}
+    </update>
+<!--    管理员删除-->
+    <delete id="deleteById">
+        DELETE FROM admin WHERE admin_id = #{admin_id}
+    </delete>
+<!--    管理员名字查询-->
+<!--    <select id="searchByName" resultType="org.example.generator.entity.Admin">-->
+<!--        SELECT * FROM admin WHERE name LIKE CONCAT('%', #{name}, '%')-->
+<!--    </select>-->
+    <select id="searchByStatus" resultType="org.example.generator.entity.Admin">
+        SELECT * FROM admin WHERE status = #{status}
+    </select>
+    <!-- 更新头像路径 -->
+    <update id="updateAvatar">
+        UPDATE admin
+        SET avatar_url = #{avatarUrl}
+        WHERE admin_id = #{adminId}
+    </update>
+</mapper>

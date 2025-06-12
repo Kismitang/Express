@@ -1,0 +1,22 @@
+"use strict";
+const _imports_0$6 = "/static/微信图片_20250514000030.jpg";
+const _imports_0$5 = "/static/出库码.png";
+const _imports_1 = "/static/寄快递 (1).png";
+const _imports_2 = "/static/联系握手.png";
+const _imports_3 = "/static/其它.png";
+const _imports_0$4 = "/static/未读 (1).png";
+const _imports_0$3 = "/static/undraw_outer-space_qey5.png";
+const _imports_0$2 = "/static/列表快递.png";
+const _imports_0$1 = "/static/撤回.png";
+const _imports_0 = "/static/喜欢.png";
+exports._imports_0 = _imports_0$6;
+exports._imports_0$1 = _imports_0$5;
+exports._imports_0$2 = _imports_0$4;
+exports._imports_0$3 = _imports_0$3;
+exports._imports_0$4 = _imports_0$2;
+exports._imports_0$5 = _imports_0$1;
+exports._imports_0$6 = _imports_0;
+exports._imports_1 = _imports_1;
+exports._imports_2 = _imports_2;
+exports._imports_3 = _imports_3;
+//# sourceMappingURL=../../.sourcemap/mp-weixin/common/assets.js.map

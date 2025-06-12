@@ -1,0 +1,1 @@
+{"version":3,"file":"feeRule.js","sources":["../../../../../develop/uniApp/HBuilderX/plugins/uniapp-cli-vite/uniPage:/cGFnZXMvZmVlUnVsZS9mZWVSdWxlLnZ1ZQ"],"sourcesContent":["import MiniProgramPage from 'D:/program/java/project/spring-vue-Express/express-nui/pages/feeRule/feeRule.vue'\nwx.createPage(MiniProgramPage)"],"names":[],"mappings":";;;;;;;;;;;AACA,GAAG,WAAW,eAAe;"}

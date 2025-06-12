@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.generator.mapper.DailySignStatisticsMapper">
+
+    <resultMap id="BaseResultMap" type="org.example.generator.entity.DailySignStatistics">
+            <id property="date" column="date" />
+            <result property="signCount" column="sign_count" />
+            <result property="pickupCount" column="pickup_count" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        date,sign_count,pickup_count
+    </sql>
+</mapper>

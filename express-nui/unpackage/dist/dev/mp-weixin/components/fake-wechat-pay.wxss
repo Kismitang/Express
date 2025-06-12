@@ -1,0 +1,48 @@
+
+.pay-modal.data-v-bc7244aa {
+  animation: slideUp 0.3s ease-out;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  border-radius: 20rpx 20rpx 0 0;
+  padding: 30rpx;
+}
+.pay-header.data-v-bc7244aa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40rpx;
+}
+.title.data-v-bc7244aa {
+  font-size: 36rpx;
+  font-weight: bold;
+}
+.close.data-v-bc7244aa {
+  font-size: 50rpx;
+  color: #999;
+}
+.amount.data-v-bc7244aa {
+  font-size: 60rpx;
+  text-align: center;
+  margin: 40rpx 0;
+  color: #333;
+}
+.payment-method.data-v-bc7244aa {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #eee;
+}
+.password-input.data-v-bc7244aa {
+  height: 100rpx;
+  border: 1rpx solid #ddd;
+  border-radius: 10rpx;
+  padding: 0 20rpx;
+  margin: 40rpx 0;
+}
+.pay-button.data-v-bc7244aa {
+  background: #07c160;
+  color: white;
+  border-radius: 50rpx;
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.generator.mapper.HzTaskMapper">
+
+    <resultMap id="BaseResultMap" type="org.example.generator.entity.HzTask">
+            <id property="taskId" column="task_id" />
+            <result property="employerPhone" column="employer_phone" />
+            <result property="courierPhone" column="courier_phone" />
+            <result property="labelCode" column="label_code" />
+            <result property="pickUpAddress" column="pick_up_address" />
+            <result property="deliveryAddress" column="delivery_address" />
+            <result property="deliveryAt" column="delivery_at" />
+            <result property="amount" column="amount" />
+            <result property="taskStatus" column="task_status" />
+            <result property="taskRemarks" column="task_remarks" />
+            <result property="deadline" column="deadline" />
+            <result property="completeTime" column="complete_time" />
+            <result property="expressId" column="express_id" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        task_id,employer_phone,courier_phone,label_code,pick_up_address,delivery_address,
+        delivery_at,amount,task_status,task_remarks,deadline,
+        complete_time,express_id
+    </sql>
+</mapper>

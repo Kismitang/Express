@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.generator.mapper.AdminActionShelfLogMapper">
+
+    <resultMap id="BaseResultMap" type="org.example.generator.entity.AdminActionShelfLog">
+            <id property="logId" column="log_id" />
+            <result property="adminId" column="admin_id" />
+            <result property="actionType" column="action_type" />
+            <result property="actionTime" column="action_time" />
+            <result property="shelfId" column="shelf_id" />
+            <result property="beforeData" column="before_data" />
+            <result property="afterData" column="after_data" />
+    </resultMap>
+    <delete id="deleteById">
+        DELETE FROM admin_action_shelf_log WHERE id = #{logId}
+    </delete>
+    <sql id="Base_Column_List">
+        log_id,admin_id,action_type,action_time,shelf_id,before_data,
+        after_data
+    </sql>
+    <!-- AdminActionShelfLogMapper.xml -->
+</mapper>

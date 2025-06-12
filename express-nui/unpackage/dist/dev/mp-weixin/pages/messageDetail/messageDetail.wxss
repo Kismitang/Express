@@ -1,0 +1,52 @@
+/* 水平间距 */
+/* 水平间距 */
+.detail-container {
+  background-color: #f5f5f5;
+  height: 100vh;
+  width: 100vw;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.message-list-container {
+  overflow-y: auto;
+  max-height: 100vh;
+  /* 确保消息列表可滚动 */
+}
+.message-item {
+  margin-bottom: 15px;
+}
+.time-container {
+  text-align: center;
+  margin: 10px 0;
+  color: #333;
+}
+.time {
+  font-size: 14px;
+}
+.message-content-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 10px;
+}
+.message-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000000;
+}
+.message-text {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #000000;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+}
+.message-phone {
+  margin-top: 10px;
+}
+.phone-link {
+  color: #409eff;
+  text-decoration: underline;
+  font-size: 14px;
+}

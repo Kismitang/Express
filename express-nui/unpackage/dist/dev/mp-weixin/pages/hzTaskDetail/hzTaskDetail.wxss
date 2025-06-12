@@ -1,0 +1,55 @@
+
+.container.data-v-d9f1f0e2 {
+  padding: 20px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+.header.data-v-d9f1f0e2 {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.header-title.data-v-d9f1f0e2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+.order-detail.data-v-d9f1f0e2 {
+  background-color: #fff;
+  border-radius: 0 0 12px 12px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.detail-item.data-v-d9f1f0e2 {
+  display: flex;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+.detail-item.data-v-d9f1f0e2:last-child {
+  border-bottom: none;
+}
+.label.data-v-d9f1f0e2 {
+  width: 100px;
+  color: #666;
+  font-weight: bold;
+}
+.value.data-v-d9f1f0e2 {
+  flex: 1;
+  color: #333;
+}
+
+/* 特殊样式 */
+.status-value.data-v-d9f1f0e2 {
+  font-weight: bold;
+}
+.code-value.data-v-d9f1f0e2 {
+  color: #ff6a00;
+  font-weight: bold;
+}
+.amount-value.data-v-d9f1f0e2 {
+  color: #ff4d4f;
+  font-weight: bold;
+}

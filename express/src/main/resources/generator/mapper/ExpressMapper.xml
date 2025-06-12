@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.generator.mapper.ExpressMapper">
+
+    <resultMap id="BaseResultMap" type="org.example.generator.entity.Express">
+            <id property="expressId" column="express_id" />
+            <result property="trackingNumber" column="tracking_number" />
+            <result property="senderName" column="sender_name" />
+            <result property="senderPhone" column="sender_phone" />
+            <result property="receiverName" column="receiver_name" />
+            <result property="receiverPhone" column="receiver_phone" />
+            <result property="expressDesribe" column="express_desribe" />
+            <result property="shelfId" column="shelf_id" />
+            <result property="labelCode" column="label_code" />
+            <result property="updatedAt" column="updated_at" />
+            <result property="overstockDay" column="overstock_day" />
+            <result property="status" column="status" />
+            <result property="address" column="address" />
+            <result property="entryAt" column="entry_at" />
+            <result property="isTask" column="is_task" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        express_id,tracking_number,sender_name,sender_phone,receiver_name,receiver_phone,express_desribe,
+        shelf_id,label_code,created_at,updated_at,
+        overstock_day,status,address,entry_at,is_task
+    </sql>
+</mapper>

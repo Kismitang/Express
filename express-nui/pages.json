@@ -1,0 +1,197 @@
+{
+	"pages": [
+		{
+			"path" : "pages/login/login",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/home/home",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/noticeAndhelp/noticeAndhelp",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/message/message",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/my/my",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/register/register",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/noticeDetail/noticeDetail",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/editMy/editMy",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/history/history",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/sendCourier/sendCourier",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/senderOrder/senderOrder",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/feeRule/feeRule",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/orderDetail/orderDetail",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/MHP/MHP",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/addHzTask/addHzTask",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/hzTaskDetail/hzTaskDetail",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/allHzTask/allHzTask",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/messageDetail/messageDetail",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/wallet/wallet",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/recharge/recharge",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/pickupCode/pickupCode",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "苍霞驿站服务",
+		"navigationBarBackgroundColor": "#55aaff",
+		"app-plus": {
+		        "titleNView": {
+		            "textColor": "#000000" // 强制安卓文字颜色
+		        }
+		    }
+	},
+	"tabBar":{
+		"selectedColor": "#000",
+		"list": [
+			{
+				"pagePath": "pages/home/home",
+				"text": "首页",
+				"iconPath": "/static/快递包裹,箱子.png",
+				"selectedIconPath": "/static/快递包裹,箱子 (1).png"
+			},
+			{
+				"pagePath": "pages/noticeAndhelp/noticeAndhelp",
+				"text": "公告",
+				"iconPath": "/static/公告.png",
+				"selectedIconPath": "/static/公告(1).png"
+			},
+			{
+				"pagePath": "pages/allHzTask/allHzTask",
+				"text": "任务",
+				"iconPath": "/static/任务.png",
+				"selectedIconPath": "/static/任务-05.png"
+			},
+			{
+				"pagePath": "pages/message/message",
+				"text": "消息",
+				"iconPath": "/static/消息.png",
+				"selectedIconPath": "/static/消息(1).png",
+				"badge": 0 // 初始化未读消息数量为0
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "我的",
+				"iconPath": "/static/我的.png",
+				"selectedIconPath": "/static/我的 (1).png"
+			}
+		]
+	}
+}

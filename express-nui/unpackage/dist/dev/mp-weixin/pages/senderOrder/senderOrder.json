@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "",
+  "usingComponents": {
+    "fake-wechat-pay": "../../components/fake-wechat-pay"
+  }
+}
